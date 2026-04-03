@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Semantic Web</title>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.jpg" alt="Logo dummy" width="300">
+    <h1>Example Semantic Web with HTML5</h1>
+</header>
+
+<nav>
+    <a href="hal1.html">Link 1</a>
+    <a href="hal2.html">Link 2</a>
+    <a href="hal3.html">Link 3</a>
+    <a href="hal4.html">Link 4</a>
+</nav>
+
+<article>
+    <h2>Form Pemesanan Kendaraan</h2>
+
+    <form action="" method="post">
+        <fieldset>
+            <legend>Formulir Pemesanan Kendaraan</legend>
+
+            <label for="nama">Nama Pemesan:</label>
+            <input type="text" id="nama" name="nama" required>
+            <br>
+
+            <label for="alamat">Alamat Pengiriman:</label>
+            <input type="text" id="alamat" name="alamat" required>
+            <br>
+
+            <label for="telepon">Nomor Telepon:</label>
+            <input type="tel" id="telepon" name="telepon"
+                   pattern="[0-9]{10,13}"
+                   title="Masukkan 10-13 digit angka" required>
+            <br>
+
+            <label for="tanggal_sewa">Tanggal Sewa:</label>
+            <input type="date" id="tanggal_sewa" name="tanggal_sewa" required>
+            <br>
+
+            <label for="tanggal_kembali">Tanggal Pengembalian:</label>
+            <input type="date" id="tanggal_kembali" name="tanggal_kembali" required>
+            <br>
+
+            <label for="jenis">Jenis Kendaraan:</label>
+            <select id="jenis" name="jenis">
+                <option value="mobil">Mobil</option>
+                <option value="motor">Motor</option>
+            </select>
+            <br>
+
+            <label for="model">Model Kendaraan:</label>
+            <input type="text" id="model" name="model" placeholder="Contoh: Avanza/Beat">
+            <br>
+
+            <label for="plat">Nomor Plat Kendaraan (opsional):</label>
+            <input type="text" id="plat" name="plat">
+            <br>
+
+           <label for="asuransi">Asuransi Tambahan:</label>
+           <select id="asuransi" name="asuransi">
+           <option value="ya">Ya</option>
+           <option value="tidak">Tidak</option>
+           </select>
+           <br>
+           <br>
+
+            <label for="catatan">Catatan Khusus:</label>
+            <textarea id="catatan" name="catatan"></textarea>
+            <br><br>
+
+            <button type="submit">Kirim</button>
+
+        </fieldset>
+    </form>
+
+</article>
+
+<footer>
+    Created by zahra &copy; 2026
+</footer>
+
+</body>
+</html>
